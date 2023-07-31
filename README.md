@@ -1,7 +1,7 @@
 # Zero-Shot Dialogue Relation Extraction by Relating Explainable Triggers and Relation Names
 
 ## Setup 
-
+![](model.pdf)
 
 ## Training
 ```shell
