@@ -1,5 +1,8 @@
 # Zero-Shot Dialogue Relation Extraction by Relating Explainable Triggers and Relation Names
 
+## Setup 
+check modeling.py
+
 ## Preprocessing
 ```shell
 python preprocess.py

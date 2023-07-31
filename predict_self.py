@@ -690,7 +690,7 @@ def main():
 
 
 
-        output_eval_file = os.path.join(args.output_dir, "logits_dev_{}_with_tri.txt".format(args.epoch_num))
+        output_eval_file = os.path.join(args.output_dir, "logits_test_{}_with_tri.txt".format(args.epoch_num))
         with open(output_eval_file, "w") as f:
             for i in range(len(logits_all)):
                 f.write(str(logits_all[i]))

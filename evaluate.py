@@ -115,16 +115,18 @@ def evaluate(devp, data, confidence):
     # print(group_a, group_b, group_c)
     # print("\n\n\n\n\n\n")
     # exit()
-    if args.rank_num==1:
-        with open('rel_output_trigger_test_confidence.csv', 'w') as f:
-            write = csv.writer(f)
-            write.writerow(["predict", "ground truth", "confidence"])
-            write.writerows(rel_output)
-    elif args.rank_num==2:
-        with open('rel_output_trigger_test_rank2.csv', 'w') as f:
-            write = csv.writer(f)
-            write.writerow(["predict_A", "predict_B", "ground truth"])
-            write.writerows(rel_output)
+
+    # fix?
+    # if args.rank_num==1:
+    #     with open('rel_output_trigger_test_confidence.csv', 'w') as f:
+    #         write = csv.writer(f)
+    #         write.writerow(["predict", "ground truth", "confidence"])
+    #         write.writerows(rel_output)
+    # elif args.rank_num==2:
+    #     with open('rel_output_trigger_test_rank2.csv', 'w') as f:
+    #         write = csv.writer(f)
+    #         write.writerow(["predict_A", "predict_B", "ground truth"])
+    #         write.writerows(rel_output)
     
     # with open('tri_output_C_first_binary_v1.csv', 'w') as f:
     #     write = csv.writer(f)
@@ -263,10 +265,10 @@ if __name__ == '__main__':
     #         map_list.append(datadev[i][1][j]["rid"])
     
     if args.dev_or_test == 0:
-        with open("trend/dev.json", "r", encoding='utf8') as f:
+        with open("class_3_balance_on_A/dev.json", "r", encoding='utf8') as f:
             shu_data = json.load(f)  
     else:
-        with open("trend/test.json", "r", encoding='utf8') as f:
+        with open("class_3_balance_on_A/test.json", "r", encoding='utf8') as f:
             shu_data = json.load(f)  
 
     # with open("trend/test.json", "r", encoding='utf8') as f:
