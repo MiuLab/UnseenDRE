@@ -3,19 +3,16 @@
 ## Setup 
 check modeling.py
 
-## Preprocessing
-```shell
-python preprocess.py
-```
+
 
 ## Training
 ```shell
-python main.py
+bash run.sh
 ```
 
 ## Testing
 ```shell
-python test.py
+bash predict.sh
 ```
 
 ## Reference
