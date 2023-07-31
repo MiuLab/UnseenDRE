@@ -1,7 +1,7 @@
 # Zero-Shot Dialogue Relation Extraction by Relating Explainable Triggers and Relation Names
 
 ## Setup 
-
+- Paper Link: https://arxiv.org/pdf/2306.06141.pdf
 
 ## Training
 ```shell
